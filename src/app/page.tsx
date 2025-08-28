@@ -175,7 +175,7 @@ export default function Home() {
 
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 text-slate-900 flex">
-			{renderLeftNav()}
+			{/* {renderLeftNav()} */}
 
 			<main className="flex-1 p-6">
 				<Header
@@ -184,15 +184,13 @@ export default function Home() {
 				/>
 
 				<div className="mt-6">
-					{activeRoute === 'dashboard' && (
-						<Dashboard
-							bets={bets}
-							onJoin={joinBet}
-							onOpenCreate={openCreate}
-						/>
-					)}
+					<Dashboard
+						bets={bets}
+						onJoin={joinBet}
+						onOpenCreate={openCreate}
+					/>
 
-					{activeRoute === 'wallet' && (
+					{/* {activeRoute === 'wallet' && (
 						<Wallet
 							wallet={wallet}
 							onDeposit={(amt: number) =>
@@ -207,9 +205,9 @@ export default function Home() {
 								}))
 							}
 						/>
-					)}
+					)} */}
 
-					{activeRoute === 'admin' && (
+					{/* {activeRoute === 'admin' && (
 						<AdminPanel
 							bets={bets}
 							onSetResult={(id, result) =>
@@ -221,7 +219,7 @@ export default function Home() {
 								)
 							}
 						/>
-					)}
+					)} */}
 				</div>
 			</main>
 
