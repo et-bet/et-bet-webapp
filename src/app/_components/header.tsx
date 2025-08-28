@@ -1,4 +1,5 @@
 import { TelegramUser } from '@/types';
+import Link from 'next/link';
 
 export function Header({
 	telegramUser,
@@ -20,12 +21,18 @@ export function Header({
 			</div>
 
 			<div className="flex items-center gap-3">
-				<button
+				<Link
+					className="px-4 py-2 rounded bg-green-500 text-white"
+					href="/wallet"
+				>
+					Wallet
+				</Link>
+				{/* <button
 					className="px-4 py-2 rounded bg-green-500 text-white"
 					onClick={onCreate}
 				>
-					+ Create Bet
-				</button>
+					+ Deposit
+				</button> */}
 				<button className="px-3 py-2 rounded border">
 					History
 				</button>

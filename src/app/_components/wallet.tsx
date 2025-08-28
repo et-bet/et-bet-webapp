@@ -39,18 +39,13 @@ export function Wallet({
 						className="px-3 py-2 rounded bg-green-500 text-white"
 						onClick={() => onDeposit(amt)}
 					>
-						Deposit (Stripe)
+						Deposit
 					</button>
 				</div>
 
 				<div className="mt-3 text-sm text-gray-500">
 					{`Tip: This is a mock deposit button. In production, you'd open Stripe Checkout or Coinbase Commerce.`}
 				</div>
-			</div>
-
-			<div className="mt-4 text-sm text-gray-600">
-				Transactions will appear here in the real app (deposits,
-				withdrawals, bets).
 			</div>
 		</div>
 	);
